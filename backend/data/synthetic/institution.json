@@ -1,0 +1,11 @@
+{
+  "id": "VESIT",
+  "name": "VESIT Green Campus",
+  "location": "Chembur, Mumbai, Maharashtra, India",
+  "student_population": 3000,
+  "faculty_staff_population": 200,
+  "total_built_up_area_m2": 32500,
+  "baseline_year": 2024,
+  "target_carbon_neutral_year": 2040,
+  "source_type": "SYNTHETIC"
+}

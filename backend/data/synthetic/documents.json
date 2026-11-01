@@ -1,0 +1,200 @@
+[
+  {
+    "document_id": "DOC_POL_001",
+    "title": "VESIT Green Campus Sustainability Policy 2024-2040",
+    "document_type": "INSTITUTIONAL_POLICY",
+    "publication_date": "2024-01-15",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "VESIT GREEN CAMPUS SUSTAINABILITY POLICY (2024-2040)\nInstitution: Vivekananda Education Society's Institute of Technology (VESIT Green Campus), Mumbai.\nApproved by: Governing Board & Campus Sustainability Taskforce.\n\n1. VISION AND MANDATE\nVESIT Green Campus commits to becoming an environmentally exemplary educational institution by achieving net-zero operational greenhouse gas emissions by December 31, 2040. The institution recognises the imperative of evidence-based environmental stewardship aligned with the United Nations Sustainable Development Goals (SDGs), specifically SDG 6 (Clean Water and Sanitation), SDG 7 (Affordable and Clean Energy), SDG 11 (Sustainable Cities and Communities), SDG 12 (Responsible Consumption and Production), and SDG 13 (Climate Action).\n\n2. SCOPE AND BOUNDARIES\nThis policy governs all operational activities across the 32,500 m2 built-up campus in Chembur, Mumbai, encompassing Academic Block A, Academic Block B, Computer Laboratories, Library, Auditorium, Canteen, and the Administration Block. It applies to over 3,000 undergraduate and postgraduate students and 200 faculty and administrative staff.\n\n3. STRATEGIC DECARBONISATION TARGETS\n3.1 Target Net-Zero: Reduce annual campus carbon emissions from baseline 2,450,000 kg CO2e in 2024 to net zero by 2040.\n3.2 Renewable Electricity: Attain a minimum of 50% renewable energy penetration by 2030 through rooftop solar photovoltaic generation and renewable wheeling agreements.\n3.3 Zero Waste to Landfill: Divert 85% of solid waste from municipal landfills by 2028 through source segregation, decentralized aerobic composting, and formal recycling channels.\n3.4 Water Conservation: Reduce municipal water demand by 30% relative to baseline by 2029 via integrated rainwater harvesting and greywater recycling.\n3.5 Sustainable Commuting: Increase the share of public transit, electric mobility, cycling, and walking to 70% of total passenger-kilometres by 2027.\n\n4. GOVERNANCE AND OVERSIGHT\nThe Campus Sustainability Taskforce, chaired by the Principal and comprising Department Heads from Computer Engineering, Information Technology, Electronics, and AI & Data Science, alongside student sustainability ambassadors, shall meet quarterly to audit metrics, review progress against target trajectories, and mandate corrective actions."
+  },
+  {
+    "document_id": "DOC_AUD_002",
+    "title": "Comprehensive Campus Environmental and Carbon Audit Report 2024",
+    "document_type": "AUDIT_REPORT",
+    "publication_date": "2024-03-31",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "COMPREHENSIVE CAMPUS ENVIRONMENTAL AND CARBON AUDIT REPORT 2024\nLead Auditor: Energy and Carbon Advisory Bureau in coordination with VESIT Green Campus Committee.\n\n1. EXECUTIVE SUMMARY\nAn exhaustive baseline audit for calendar year 2024 evaluated Scope 1, Scope 2, and core Scope 3 greenhouse gas emissions for VESIT Green Campus. The baseline institutional carbon footprint is measured at 2,450,000 kg CO2e (2,450 metric tonnes CO2e).\n\n2. EMISSION SOURCE BREAKDOWN\n- Scope 1 (Direct Emissions): Stationary diesel generator sets (DG) consumed 18,400 litres of diesel fuel for emergency power backup during grid interruptions, generating 49,312 kg CO2e (emission factor 2.68 kg CO2e/L).\n- Scope 2 (Indirect Emissions from Purchased Electricity): Total annual grid electricity purchase reached 2,050,000 kWh from the Maharashtra regional grid. Applying the Central Electricity Authority (CEA) emission factor of 0.82 kg CO2e/kWh, grid electricity emissions equal 1,681,000 kg CO2e, representing 68.6% of the campus total.\n- Scope 3 (Commuting, Waste, Water): Student and staff commuting generated 580,000 kg CO2e across suburban rail, municipal buses, two-wheelers, and private vehicles. Municipal waste sent to landfill contributed 115,000 kg CO2e. Embodied water pumping and treatment accounted for 24,688 kg CO2e.\n\n3. BUILDING-LEVEL INTENSITY\nThe Computer Laboratories block exhibited the highest specific electricity intensity at 112 kWh/m2/year, driven by high-density compute labs, machine learning workstation racks, and 24/7 server room cooling. Academic Block A and Academic Block B registered 51 kWh/m2/year and 49 kWh/m2/year respectively. The Library demonstrated 54 kWh/m2/year.\n\n4. AUDITOR RECOMMENDATIONS\nPriority must be placed on expanding on-site solar generation beyond the existing 220 kWp arrays, installing variable refrigerant flow (VRF) cooling controls in the Computer Laboratories, and scaling food waste composting."
+  },
+  {
+    "document_id": "DOC_ENG_003",
+    "title": "Rooftop Solar Photovoltaic Performance Assessment: Phase 1",
+    "document_type": "TECHNICAL_REPORT",
+    "publication_date": "2024-06-20",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "ROOFTOP SOLAR PHOTOVOLTAIC PERFORMANCE ASSESSMENT: PHASE 1\nAuthors: Department of Electronics & Telecommunication and Campus Facilities.\n\n1. SYSTEM OVERVIEW\nThe Phase-1 Rooftop Solar PV installation comprises 220 kWp grid-interactive monocrystalline silicon arrays distributed as follows:\n- Academic Block A: 80 kWp (200 modules of 400Wp each)\n- Academic Block B: 70 kWp (175 modules)\n- Administration Block: 40 kWp (100 modules)\n- Library: 30 kWp (75 modules)\nThe system was commissioned under net-metering regulations with the local electricity distribution company (Adani Electricity / BEST).\n\n2. GENERATION PERFORMANCE (JULY 2023 - JUNE 2024)\nOver the 12-month evaluation cycle, the 220 kWp array yielded 312,400 kWh of clean solar electricity. Generation was highest during March, April, and May (averaging 31,500 kWh/month) and lowest during the monsoon months of July and August (averaging 14,200 kWh/month due to cloud cover and atmospheric attenuation).\n\n3. ENVIRONMENTAL AND FINANCIAL IMPACT\nThe 312,400 kWh displaced equivalent grid purchases, yielding an annual reduction of 256,168 kg CO2e based on the regional emission factor of 0.82 kg CO2e/kWh. Campus electricity bills were reduced by approximately INR 34.3 lakhs, demonstrating an estimated simple payback period of 4.2 years against capital investment.\n\n4. MAINTENANCE OBSERVATIONS\nBi-weekly panel cleaning is critical in Mumbai's dusty urban environment; unwashed arrays suffered a 12.4% soiling degradation penalty during dry winter months."
+  },
+  {
+    "document_id": "DOC_ENG_004",
+    "title": "Phase-2 Solar Canopy and Energy Storage Feasibility Study",
+    "document_type": "FEASIBILITY_STUDY",
+    "publication_date": "2024-11-10",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "FEASIBILITY STUDY: PHASE-2 SOLAR CANOPY AND ENERGY STORAGE SYSTEM\nPrepared for: VESIT Governing Board and Green Campus Committee.\n\n1. PROJECT RATIONALE\nTo accelerate progress toward the 50% renewable electricity target by 2030 (TRG_RENEWABLE) and institutional carbon neutrality by 2040 (TRG_NET_ZERO), the campus must expand solar capacity beyond available building roofs.\n\n2. PROPOSED ARCHITECTURE\nThe feasibility assessment recommends installing:\n- 150 kWp elevated solar photovoltaic canopy over the central two-wheeler and four-wheeler parking zones.\n- 50 kWp bifacial PV modules over the Auditorium perimeter roof.\n- 100 kWh lithium iron phosphate (LiFePO4) Battery Energy Storage System (BESS) integrated with an energy management inverter.\n\n3. PROJECTED OUTPUT AND AVOIDED EMISSIONS\nThe combined 200 kWp addition will generate an estimated 284,000 kWh annually. At 0.82 kg CO2e/kWh grid intensity, the avoided emissions will equal 232,880 kg CO2e annually. When added to Phase 1, total campus solar generation will reach nearly 600,000 kWh/year, meeting approximately 28% of total campus electricity demand.\n\n4. PEAK SHAVING AND DIESEL GENERATOR ABATEMENT\nThe 100 kWh battery storage allows peak load shaving between 18:00 and 21:00 during evening academic sessions, and provides instantaneous uninterruptible backup, reducing annual diesel generator run-hours by 45 hours and preventing 2,400 litres of diesel combustion (6,432 kg CO2e avoided)."
+  },
+  {
+    "document_id": "DOC_WAT_005",
+    "title": "Campus Water Audit and Conservation Strategy Report 2024",
+    "document_type": "AUDIT_REPORT",
+    "publication_date": "2024-05-18",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "CAMPUS WATER AUDIT AND CONSERVATION STRATEGY REPORT 2024\nAudited by: Environmental Cell and Civil Infrastructure Division, VESIT Green Campus.\n\n1. BASELINE WATER FOOTPRINT\nIn 2024, total municipal piped water consumption stood at 48,000,000 litres (48,000 m3). Daily consumption averages approximately 131,500 litres during active semester days.\n\n2. CONSUMPTION DISTRIBUTION\n- Canteen and Catering: 28% (36,800 L/day) - food preparation, utensil washing, and drinking water purification reject.\n- Restrooms and Sanitation: 46% (60,500 L/day) - dual-flush toilets, urinals, and handwashing basins across Academic Block A, Academic Block B, and Computer Laboratories.\n- Landscape and Garden Irrigation: 18% (23,600 L/day) - maintenance of campus lawns and tree groves.\n- Laboratory and Cleaning: 8% (10,600 L/day).\n\n3. RAINWATER HARVESTING SYSTEM PERFORMANCE\nThe campus integrated rainwater harvesting system captures surface runoff from 18,000 m2 of terrace roofs across Academic Block A, B, and the Library. Three underground recharge filtration cisterns with a combined capacity of 450,000 litres harvested 12,400,000 litres during the 2024 monsoon season (June to September). Harvested water is routed through sand-gravel bed filters and used for toilet flushing and cooling tower replenishment.\n\n4. RECOMMENDATIONS AND TARGETS\nAchieving Target TRG_WATER_NEUTRAL (30% reduction by 2029) requires:\n- Retrofitting 140 washroom faucets with aerators, reducing tap flow from 9 L/min to 3.5 L/min (saving 3,500,000 L/yr).\n- Upgrading the existing canteen greywater reed-bed biofilter to recycle 15,000 litres daily for landscape irrigation."
+  },
+  {
+    "document_id": "DOC_WST_006",
+    "title": "Solid Waste Management and Decentralized Composting Audit 2024",
+    "document_type": "AUDIT_REPORT",
+    "publication_date": "2024-08-12",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "SOLID WASTE MANAGEMENT AND DECENTRALIZED COMPOSTING AUDIT 2024\nVESIT Green Campus Sustainable Operations Review.\n\n1. WASTE GENERATION PROFILE\nTotal municipal solid waste generated across the institution in 2024 was 68,400 kg (68.4 metric tonnes).\nComposition analysis reveals:\n- Organic and Kitchen Waste (Canteen and dining): 42% (28,728 kg)\n- Recyclable Paper, Cardboard, and Packaging: 33% (22,572 kg)\n- Plastic bottles, wrappers, and containers: 14% (9,576 kg)\n- Electronic Waste and Laboratory Hardware: 3% (2,052 kg)\n- Non-recyclable Inert Waste: 8% (5,472 kg)\n\n2. DECENTRALIZED TREATMENT INITIATIVE\nUnder initiative INIT_BIOGAS_CANTEEN, a 250 kg/day anaerobic biomethanation plant coupled with twin 500-litre aerobic composting tumblers was commissioned adjacent to the Canteen.\nIn 2024, the facility successfully processed 19,200 kg of food scraps, preventing uncontrolled anaerobic decomposition at Deonar landfill.\nAvoided landfill emissions are calculated at 1.25 kg CO2e/kg waste, preventing 24,000 kg CO2e, while producing 1,400 kg of enriched bio-manure utilized across campus botanical beds.\n\n3. DRY RECYCLING AND E-WASTE PARTNERSHIPS\nVESIT partners with authorized e-waste recycler Greenscape Solutions for responsible dismantling of obsolete computer motherboards, CRTs, and lithium batteries in compliance with E-Waste Management Rules 2022. In 2024, 1,850 kg of electronic scrap was recovered, avoiding toxic heavy metal contamination and supporting SDG 12."
+  },
+  {
+    "document_id": "DOC_TRN_007",
+    "title": "Comprehensive Campus Commuter Mobility and Transportation Survey 2024",
+    "document_type": "SURVEY_REPORT",
+    "publication_date": "2024-04-15",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "CAMPUS COMMUTER MOBILITY AND TRANSPORTATION SURVEY 2024\nConducted by: Department of Artificial Intelligence & Data Science and Student Council.\nSample Size: 2,140 student respondents and 172 faculty and staff members.\n\n1. MODAL SPLIT\nSurvey analysis establishes the following commuting split:\n- Suburban Rail (Harbour & Central Line): 48% of commuter trips (avg one-way commute: 14 km).\n- BEST Municipal Transit Buses: 22% (avg one-way: 7 km).\n- Two-Wheelers (Petrol motorcycles and scooters): 16% (avg one-way: 6 km).\n- Private Passenger Cars (Single-occupant and carpool): 6% (avg one-way: 9 km).\n- Walking and Cycling (Locals within 2 km radius): 8%.\n\n2. EMISSIONS ATTRIBUTION\nTransportation accounts for approximately 580,000 kg CO2e annually (23.7% of total campus footprint). Although private passenger cars account for only 6% of trips, they generate 28.5% of total commuting emissions due to high specific carbon intensity (0.175 kg CO2e/pkm). Two-wheelers contribute 19.3% of transport emissions. Suburban rail and municipal buses account for the majority of passenger-kilometres while maintaining low specific carbon intensity (0.028 and 0.054 kg CO2e/pkm respectively).\n\n3. INITIATIVE: CAMPUS ELECTRIC FEEDER SHUTTLE\nInitiative INIT_ELECTRIC_SHUTTLE operates two 14-seater electric shuttle vans between Chembur and Kurla railway stations and the campus gate. Since launch in January 2024, the shuttle has completed over 1,800 trips, carrying 21,500 passenger-trips and displacing 36,000 kg CO2e of auto-rickshaw and private vehicle journeys."
+  },
+  {
+    "document_id": "DOC_IOT_008",
+    "title": "IoT Smart Energy Metering and Real-Time Building Telemetry Report",
+    "document_type": "TECHNICAL_REPORT",
+    "publication_date": "2024-10-05",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "IOT SMART ENERGY METERING AND REAL-TIME TELEMETRY REPORT\nDepartment: AI & Data Science and Computer Engineering.\nProject Code: INIT_IOT_ENERGY_MGT.\n\n1. ARCHITECTURE AND DEPLOYMENT\nIn March 2024, 45 Modbus-RS485 smart multi-function digital energy meters were deployed across all main electrical distribution boards (MDBs) and sub-distribution boards (SDBs) in seven campus buildings.\nTelemetry is aggregated by five edge gateways using MQTT and transmitted over campus Wi-Fi to a local time-series monitoring server.\n\n2. INSIGHTS AND ANOMALY DETECTION\nReal-time monitoring revealed critical operational inefficiencies:\n- Computer Laboratories Base Load: Standby power consumption during non-operational nighttime hours (22:00 to 06:00) averaged 24 kW due to idling desktop power supplies and server room air conditioners operating at non-optimal setpoints (19\u00b0C instead of 24\u00b0C).\n- Phantom Loads in Auditorium: Sound consoles and stage lighting transformers consumed 3.8 kW in quiescent mode.\n- Academic Block Peak Concurrency: Peak power demand of 410 kW occurs between 11:30 and 14:00 on weekdays when laboratory sessions, lecture air conditioning, and canteen catering run simultaneously.\n\n3. OPTIMIZATION ACTIONS TAKEN\nAutomated relay shutdowns for computer lab clusters and adjusting server room HVAC setpoints to 24\u00b0C resulted in a measured 4.8% reduction in monthly electricity consumption, saving approximately 98,000 kWh annually (80,360 kg CO2e avoided)."
+  },
+  {
+    "document_id": "DOC_SDG_009",
+    "title": "VESIT Strategic SDG Alignment and Action Framework 2024-2030",
+    "document_type": "STRATEGIC_PLAN",
+    "publication_date": "2024-02-01",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "VESIT STRATEGIC SDG ALIGNMENT AND ACTION FRAMEWORK (2024-2030)\nDocument Ref: VESIT/SDG/2024/V1.\n\n1. INSTITUTIONAL COMMITMENT\nVESIT Green Campus formally anchors its sustainability strategy to the United Nations 2030 Agenda for Sustainable Development. While all 17 SDGs are recognized, the college prioritizes six core goals where campus operations and academic research exert direct, measurable impact.\n\n2. CORE SDG MAPPINGS AND INITIATIVES\n- SDG 6: Clean Water and Sanitation\n  - Initiative: Integrated Rainwater Harvesting & Filtration Cisterns (INIT_RWH_SYSTEM).\n  - Target: 30% reduction in municipal water demand by 2029 (TRG_WATER_NEUTRAL).\n  - Outcome: 12.4 million litres harvested annually; zero untreated effluent discharge.\n\n- SDG 7: Affordable and Clean Energy\n  - Initiative: Phase-1 (220 kWp) and Phase-2 (200 kWp) Rooftop Solar Projects (INIT_SOLAR_PH1, INIT_SOLAR_PH2).\n  - Target: 50% renewable electricity share by 2030 (TRG_RENEWABLE).\n  - Outcome: Over 312,000 kWh solar generated annually in Phase 1, expanding to 600,000 kWh in Phase 2.\n\n- SDG 11: Sustainable Cities and Communities\n  - Initiatives: Electric Campus Feeder Transit (INIT_ELECTRIC_SHUTTLE) and Miyawaki Urban Forest (INIT_BIODIVERSITY_ZONE).\n  - Target: 70% low-carbon commuting share by 2027 (TRG_GREEN_COMMUTE).\n\n- SDG 12: Responsible Consumption and Production\n  - Initiative: Canteen Food Waste Digester and Composting (INIT_BIOGAS_CANTEEN) and E-Waste Disposal protocol.\n  - Target: 85% diversion from municipal landfills by 2028 (TRG_ZERO_WASTE).\n\n- SDG 13: Climate Action\n  - Target: Institutional Carbon Neutrality by 2040 (TRG_NET_ZERO).\n  - Outcome: Tracking through the interactive College Climate Clock and evidence-grounded GraphRAG platform.\n\n- SDG 15: Life on Land\n  - Initiative: Miyawaki Urban Native Afforestation (INIT_BIODIVERSITY_ZONE) preserving 1,200 native flora specimens."
+  },
+  {
+    "document_id": "DOC_BIO_010",
+    "title": "Miyawaki Native Afforestation and Campus Carbon Sequestration Report",
+    "document_type": "PROJECT_REPORT",
+    "publication_date": "2024-07-10",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "MIYAWAKI NATIVE AFFORESTATION AND CAMPUS CARBON SEQUESTRATION REPORT\nProject: INIT_BIODIVERSITY_ZONE\nSupervised by: Environmental Cell and Nature Club.\n\n1. PROJECT BACKGROUND\nIn June 2023, VESIT Green Campus dedicated a 600 m2 peripheral plot behind the Auditorium to high-density afforestation utilizing the Japanese Miyawaki technique. 1,200 saplings across 32 indigenous tree and shrub species (including Neem, Peepal, Jamun, Karanj, and Bamboo) were planted with organic soil conditioning.\n\n2. SURVIVAL RATE AND CANOPY DEVELOPMENT\nAt the 12-month audit in June 2024, the plantation recorded a 94.2% survival rate. The dense canopy has reached an average height of 3.8 metres, creating a multi-layered urban micro-habitat attracting 24 bird species and diverse pollinators.\n\n3. ESTIMATED CARBON SEQUESTRATION\nBased on standard allometric biomass equations for tropical urban afforestation:\n- Current annual sequestration: approximately 14,000 kg CO2e/year.\n- Projected maturity sequestration (at 10 years): 38,000 kg CO2e/year.\nIn addition, thermal infrared sensor measurements demonstrated a localized microclimate cooling effect of 2.3\u00b0C compared to adjacent paved asphalt parking areas, mitigating the campus urban heat island phenomenon."
+  },
+  {
+    "document_id": "DOC_BLD_011",
+    "title": "Building Energy Benchmark: Computer Laboratories High-Density Compute Audit",
+    "document_type": "BENCHMARK_REPORT",
+    "publication_date": "2024-09-15",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "BUILDING ENERGY BENCHMARK: COMPUTER LABORATORIES HIGH-DENSITY COMPUTE AUDIT\nFacility: Computer Laboratories Building (BLD_LAB)\nArea: 5,200 m2 | Dedicated Labs: 16 Computer Labs, 2 Server Rooms, 1 AI Research Center.\n\n1. ENERGY CONSUMPTION ANALYSIS\nThe Computer Laboratories building consumed 582,400 kWh in 2024, accounting for 28.4% of total campus electricity usage despite occupying only 16% of total campus floor area.\nSpecific energy consumption reached 112 kWh/m2/year.\n\n2. SUB-SYSTEM POWER BREAKDOWN\n- Computing Workstations & Lab Equipment: 44% (256,256 kWh)\n- Air Conditioning and Climate Control: 41% (238,784 kWh)\n- Lighting (LED luminaires): 9% (52,416 kWh)\n- Auxiliary Equipment and UPS losses: 6% (34,944 kWh)\n\n3. OPPORTUNITIES FOR EFFICIENCY\n- Power Usage Effectiveness (PUE) in the primary AI cluster server room is currently 1.74, indicating significant cooling inefficiency. Implementing aisle containment and variable-speed inverter chillers can reduce PUE to 1.32.\n- Installing smart master switch relays for lab workstation benches to prevent overnight phantom draws of idle PCs will conserve an estimated 32,000 kWh/year (26,240 kg CO2e)."
+  },
+  {
+    "document_id": "DOC_BLD_012",
+    "title": "Facility Sustainability Review: Canteen and Dining Hall Operations",
+    "document_type": "FACILITY_REPORT",
+    "publication_date": "2024-08-28",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "FACILITY SUSTAINABILITY REVIEW: CANTEEN AND DINING HALL OPERATIONS\nFacility: Canteen Building (BLD_CAN) | Daily Footfall: ~2,200 meals and snacks.\n\n1. OPERATIONAL OVERVIEW\nThe Canteen is the campus's primary point of solid food waste generation and high daily water demand. Daily operations consume an average of 38,000 litres of water and produce 120 kg of wet kitchen waste.\n\n2. BIOGAS CONVERSION PROGRESS\nThe anaerobic biomethanation plant installed under INIT_BIOGAS_CANTEEN utilizes wet kitchen peelings, leftover rice, and vegetable trimmings. The system generates 12 m3 of methane-rich biogas daily, piped directly to the canteen commercial kitchen to fuel two low-pressure commercial burners. This displaces 14 commercial LPG cylinders (19 kg each) per month, reducing operating costs by INR 25,000 monthly and abating 7,200 kg CO2e annually.\n\n3. SINGLE-USE PLASTIC ELIMINATION\nIn compliance with Maharashtra Plastic Waste Management regulations, the Canteen successfully transitioned 100% of beverage and food containers to stainless steel reusable cutlery and biodegradable bagasse containers. Sale of packaged single-use PET water bottles under 500ml was replaced with three commercial chilled RO refill kiosks."
+  },
+  {
+    "document_id": "DOC_BLD_013",
+    "title": "Facility Sustainability Review: Library Energy and Daylighting Optimization",
+    "document_type": "FACILITY_REPORT",
+    "publication_date": "2024-04-02",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "FACILITY SUSTAINABILITY REVIEW: LIBRARY ENERGY AND DAYLIGHTING OPTIMIZATION\nFacility: Library Building (BLD_LIB) | Built-Up Area: 3,100 m2.\n\n1. LIGHTING AND DAYLIGHTING ASSESSMENT\nThe Library building features an east-facing glazed facade providing high natural daylighting throughout morning hours. In October 2023, conventional fluorescent tube fittings were completely replaced with 18W daylight-harvesting dimmable LED fixtures. The smart lighting system dims interior rows automatically when ambient sunlight surpasses 400 lux.\n\n2. SOLAR GENERATION INTEGRATION\nA 30 kWp rooftop solar PV array mounted on the Library roof generated 42,600 kWh in 2024. The Library's total electricity consumption for the year was 168,200 kWh, meaning on-site solar directly supplied 25.3% of the building's electrical demand.\n\n3. DIGITALIZATION AND PAPER CONSERVATION\nThrough the Library's e-repository portal and digital subscription drive, institutional paper consumption for journal printing decreased by 65% since 2022, saving approximately 4.2 tonnes of paper and avoiding 5,880 kg CO2e embodied emissions."
+  },
+  {
+    "document_id": "DOC_BLD_014",
+    "title": "Facility Sustainability Review: Auditorium HVAC and Event Load Management",
+    "document_type": "FACILITY_REPORT",
+    "publication_date": "2024-10-18",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "FACILITY SUSTAINABILITY REVIEW: AUDITORIUM HVAC AND EVENT LOAD MANAGEMENT\nFacility: Auditorium (BLD_AUD) | Seating Capacity: 800 seats | Area: 2,800 m2.\n\n1. OCCUPANCY PROFILE AND LOAD DYNAMICS\nThe Auditorium represents an intermittent high-demand electrical load. During annual technical festivals, cultural symposiums, and convocation ceremonies, instantaneous cooling load reaches 140 TR (tons of refrigeration). However, the building remains largely unoccupied for approximately 65% of calendar weekdays.\n\n2. ENERGY INTENSITY AND MANAGEMENT\nAnnual electricity consumption was 134,200 kWh in 2024. Prior to the installation of IoT sub-metering, chilled water pumps and ventilation blowers were frequently left operational during rehearsals and setup days.\nImplementing an automated occupancy-based scheduling protocol has curbed wasted idle consumption by 22,000 kWh annually (18,040 kg CO2e).\n\n3. PROPOSED ROOF SOLAR RETROFIT\nThe Auditorium possesses an unobstructed curved roof area of 1,200 m2. Phase 2 solar planning incorporates a 50 kWp lightweight bifacial PV installation expected to generate 71,000 kWh annually."
+  },
+  {
+    "document_id": "DOC_TRN_015",
+    "title": "Campus Commuting Decarbonisation: Electric Shuttle Route Optimization Study",
+    "document_type": "MOBILITY_REPORT",
+    "publication_date": "2024-11-25",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "CAMPUS COMMUTING DECARBONISATION: ELECTRIC SHUTTLE ROUTE OPTIMIZATION STUDY\nProject: INIT_ELECTRIC_SHUTTLE | Operators: Administration and Student Mobility Volunteers.\n\n1. VEHICLE PERFORMANCE SPECIFICATIONS\nTwo 14-passenger Mahindra Supro EV vans equipped with 48V / 20 kWh lithium-ion battery packs operate continuously between 07:45 and 10:30, and 16:00 and 18:30 on academic working days. Charging takes place on-campus during off-peak hours (11:00 to 15:00) utilizing solar electricity from the Academic Block A rooftop array.\n\n2. SERVICE METRICS (JANUARY - OCTOBER 2024)\n- Total Kilometres Traveled: 24,800 km.\n- Passenger-Trips Delivered: 38,400 student and staff journeys.\n- Average Fleet Energy Consumption: 0.18 kWh/km.\n- Grid Electricity Consumed: 4,464 kWh (supplied predominantly by on-site solar).\n\n3. EMISSION SAVINGS CALCULATION\nDisplaced trips primarily substitute shared three-wheeler auto-rickshaws (CNG/Petrol factor: 0.082 kg CO2e/pkm) and private two-wheelers (0.042 kg CO2e/pkm). Net avoided emissions for the 10-month evaluation period total 31,200 kg CO2e. Expanding the fleet with two additional 24-seater electric mini-buses will triple commuter ridership and eliminate 95,000 kg CO2e annually."
+  },
+  {
+    "document_id": "DOC_WAT_016",
+    "title": "Rainwater Harvesting Hydrological Yield and Recharge Assessment 2024",
+    "document_type": "TECHNICAL_REPORT",
+    "publication_date": "2024-10-12",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "RAINWATER HARVESTING HYDROLOGICAL YIELD AND RECHARGE ASSESSMENT 2024\nHydrological Consultant: AquaTerra Environmental for VESIT Green Campus.\n\n1. CATCHMENT CHARACTERISTICS\n- Rooftop Catchment (Academic Blocks A, B, and Library): 18,000 m2 reinforced concrete terrace with food-grade epoxy waterproof lining.\n- Paved Walkway Catchment: 4,200 m2 interlocking permeable concrete pavers.\n- Mean Annual Monsoon Rainfall (Mumbai suburbs): 2,420 mm.\n\n2. SYSTEM YIELD\nApplying a conservative runoff coefficient of 0.85 for concrete terraces and 0.70 for permeable paved walkways, total harvestable runoff potential is estimated at 39,200,000 litres.\nDue to storage cistern constraints (total active volume: 450,000 litres), 12,400,000 litres were directly captured, filtered through rapid sand-gravel beds, and stored for plumbing usage. The remaining excess runoff was diverted to four deep injection borewells providing groundwater recharge to the local aquifer table.\n\n3. QUALITY TESTING\nLaboratory testing of harvested water in August 2024 confirmed pH 7.2, total dissolved solids (TDS) of 84 ppm, and zero coliform contamination, meeting non-potable institutional recycling criteria (BIS 10500 standards)."
+  },
+  {
+    "document_id": "DOC_CLM_017",
+    "title": "VESIT Climate Action Roadmap 2024-2040: Net-Zero Trajectory Modeling",
+    "document_type": "STRATEGIC_PLAN",
+    "publication_date": "2024-03-01",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "VESIT CLIMATE ACTION ROADMAP (2024-2040): NET-ZERO TRAJECTORY MODELING\nAuthor: Campus Decarbonization Working Group.\n\n1. BASELINE REFERENCE (YEAR 2024)\nTotal Institutional Carbon Emissions: E0 = 2,450,000 kg CO2e/year.\nScope 1: 49,312 kg CO2e (2.0%)\nScope 2: 1,681,000 kg CO2e (68.6%)\nScope 3: 719,688 kg CO2e (29.4%)\n\n2. MATHEMATICAL DECARBONIZATION PATHWAYS\nTo attain net-zero by the target date of December 31, 2040 (t_target = 2040, horizon = 16 years):\n\nModel A: Linear Reduction Trajectory\nE(t) = E0 - r * (t - t0)\nRequired annual reduction: r = 2,450,000 / 16 = 153,125 kg CO2e/year.\n\nModel B: Compound Annual Reduction Trajectory\nE(t) = E0 * (1 - p)^(t - t0)\nTarget residual emissions by 2040: < 2% of baseline (< 49,000 kg CO2e).\nRequired compound reduction factor: p = 22.8% per annum if relying solely on operational interventions, or p = 12.5% per annum when coupled with high-integrity local tree carbon sequestration.\n\n3. PHASED INTERVENTIONS SCHEDULE\n- Phase I (2024-2027): Commissioning Phase-2 Solar (200 kWp), fleet electrification of staff buses, full canteen organic composting, campus LED conversion. Target reduction: 480,000 kg CO2e/yr.\n- Phase II (2028-2032): Off-site open access green energy wheeling (1.2 MW solar wind hybrid), heat pump water heaters, rainwater cistern expansion. Target reduction: 1,150,000 kg CO2e/yr.\n- Phase III (2033-2040): High-efficiency chiller plant upgrades, AI predictive energy optimization, zero-emission supply chain procurement, residual sequestration via urban forest mature growth. Remaining emissions: 0 kg CO2e."
+  },
+  {
+    "document_id": "DOC_WST_018",
+    "title": "Campus Circular Economy and Zero-Waste Policy Guidelines",
+    "document_type": "INSTITUTIONAL_POLICY",
+    "publication_date": "2024-09-01",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "CAMPUS CIRCULAR ECONOMY AND ZERO-WASTE POLICY GUIDELINES\nAuthority: VESIT Campus Facilities and Environmental Cell.\nPolicy Target: TRG_ZERO_WASTE (85% landfill diversion by 2028).\n\n1. MANDATORY SOURCE SEGREGATION\nAll academic blocks, administrative offices, and common corridors must maintain four-stream color-coded recycling receptacles:\n- Green Bin: Organic, biodegradable food and horticulture waste.\n- Blue Bin: Clean dry paper, notebooks, textbooks, cardboard cartons.\n- Red Bin: Rigid plastics, beverage cans, aluminum foil packaging.\n- Black Bin: Domestic sanitary and non-recyclable inert waste.\n\n2. CENTRAL COMPOSTING AND BIOGAS FACILITY\nOrganic waste collected from the Canteen and green horticulture clippings from campus gardens are banned from municipal garbage disposal trucks. All wet organics must be delivered to the Biogas plant and twin aerobic compost tumblers behind the Canteen.\n\n3. RECYCLING AND CIRCULAR PROCUREMENT\nPaper procurement must mandate a minimum of 70% post-consumer recycled content for all academic examination books and administrative stationery. Single-use plastic cutlery, disposable plastic water bottles, and styrofoam food containers are strictly prohibited from campus premises."
+  },
+  {
+    "document_id": "DOC_ENG_019",
+    "title": "HVAC and Chiller Plant Energy Efficiency Audit across Academic Blocks",
+    "document_type": "AUDIT_REPORT",
+    "publication_date": "2024-07-22",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "HVAC AND CHILLER PLANT ENERGY EFFICIENCY AUDIT ACROSS ACADEMIC BLOCKS\nAudited by: Thermal Engineering Research Lab & External BEE Accredited Energy Auditors.\n\n1. SCOPE OF COOLING AUDIT\nAir conditioning and ventilation account for approximately 38% of total annual campus electricity consumption. The audit evaluated split AC units, VRF systems, and packaged ductable units across Academic Block A, Block B, and Computer Laboratories.\n\n2. KEY FINDINGS\n- Operating Setpoints: Over 62% of faculty cabins and classroom ACs were set to 19\u00b0C - 20\u00b0C, significantly below the Bureau of Energy Efficiency (BEE) recommended default comfort setpoint of 24\u00b0C. Each 1\u00b0C increase in AC setpoint yields a documented 6% electricity saving.\n- Refrigerant Leakage and Condenser Fouling: 14 split units in Academic Block A exhibited condenser dust fouling resulting in a 18% coefficient of performance (COP) penalty.\n\n3. MANDATED ACTION PLAN\n- Enforce mandatory thermostat lock at 24\u00b0C across all administrative and academic air conditioning units starting August 1, 2024.\n- Implement quarterly coil cleaning schedules.\n- Transition aging R-22 refrigerant systems to low-GWP refrigerants (R-32 or R-290).\nTotal projected annual energy saving from cooling setpoint optimization is 142,000 kWh, preventing 116,440 kg CO2e."
+  },
+  {
+    "document_id": "DOC_ADM_020",
+    "title": "Green Campus Annual Progress Report 2024: Key Performance Indicators",
+    "document_type": "ANNUAL_REPORT",
+    "publication_date": "2024-12-15",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "GREEN CAMPUS ANNUAL PROGRESS REPORT 2024: KEY PERFORMANCE INDICATORS\nVivekananda Education Society's Institute of Technology (VESIT Green Campus), Mumbai.\n\n1. 2024 AT A GLANCE\n- Overall Carbon Footprint: 2,450,000 kg CO2e (Baseline Year).\n- Total Electricity Consumed: 2,362,400 kWh (Grid: 2,050,000 kWh | Solar PV: 312,400 kWh).\n- Renewable Energy Penetration: 13.2% of total electricity demand.\n- Total Water Consumption: 48,000,000 litres.\n- Rainwater Harvested: 12,400,000 litres (replacing 25.8% of freshwater needs).\n- Total Solid Waste Generated: 68,400 kg.\n- Landfill Diversion Rate (Recycling + Composting): 48.2% achieved.\n- Clean Commuting Mode Share: 52% across suburban rail, electric shuttle, and non-motorized transport.\n\n2. PROGRESS AGAINST SUSTAINABILITY TARGETS\n- TRG_NET_ZERO (Net Zero by 2040): In progress. Baseline established; linear trajectory requires 153,125 kg CO2e annual abatement.\n- TRG_RENEWABLE (50% Solar by 2030): In progress. Phase 1 active; Phase 2 proposal awaiting board clearance.\n- TRG_ZERO_WASTE (85% Diversion by 2028): In progress. Composting plant active; single-use plastics banned.\n- TRG_WATER_NEUTRAL (30% Reduction by 2029): In progress. Aerator retrofit initiated.\n- TRG_GREEN_COMMUTE (70% Low Carbon by 2027): In progress. EV shuttle operational with 38,400 passenger-trips.\n\n3. RESEARCH AND COMMUNITY ENGAGEMENT\nThe institution's AI & Data Science and Computer Engineering departments launched the EcoClock AI initiative: a GraphRAG-powered evidence-grounded monitoring and climate countdown engine to provide public transparency and decision-support for campus climate action."
+  },
+  {
+    "document_id": "DOC_RES_021",
+    "title": "GraphRAG for Educational Campus Decarbonization: Methodology and Architecture",
+    "document_type": "RESEARCH_PAPER",
+    "publication_date": "2024-11-01",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "GRAPHRAG FOR EDUCATIONAL CAMPUS DECARBONIZATION: METHODOLOGY AND ARCHITECTURE\nAuthors: AI & Data Science Department, VESIT Green Campus.\n\n1. ABSTRACT\nConventional vector-based Retrieval-Augmented Generation (RAG) retrieves unstructured text fragments based on cosine similarity, often failing to capture multi-hop relational dependencies between institutional sustainability policies, quantitative utility telemetry, and global sustainability frameworks such as the UN SDGs. This paper presents EcoClock AI, a hybrid GraphRAG architecture combining persistent Neo4j property graphs, local SentenceTransformers embeddings, and a locally hosted Mistral LLM via Ollama.\n\n2. GRAPH SCHEMA AND ONTOLOGY\nThe knowledge graph models institutional decarbonization across 16 node classes (Institution, Building, Department, Resource, EnergySource, Emission, Activity, SustainabilityInitiative, SustainabilityTarget, SDG, Document, Chunk, Measurement, EmissionFactor, ClimateScenario, Location) and 17 directed relationship classes preserving evidence provenance (chunk ID, document ID, extraction method, confidence, and verification status).\n\n3. HYBRID RETRIEVAL MECHANISM\nQueries are resolved through a dual-channel retrieval mechanism:\n- Vector similarity retrieves relevant narrative chunks with high semantic coverage.\n- Graph traversal identifies entity neighborhoods, multi-hop paths connecting campus activities to target indicators, and UN SDG mappings.\nA fusion ranking engine scores retrieved evidence to ground Mistral answer generation, preventing ungrounded hallucination."
+  },
+  {
+    "document_id": "DOC_SMR_022",
+    "title": "Comprehensive Summary: Campus Infrastructure, Buildings, and Resource Baseline",
+    "document_type": "REFERENCE_GUIDE",
+    "publication_date": "2024-12-20",
+    "institution_id": "VESIT",
+    "source_type": "SYNTHETIC",
+    "content": "CAMPUS INFRASTRUCTURE, BUILDINGS, AND RESOURCE BASELINE REFERENCE\nInstitution: VESIT Green Campus, Chembur, Mumbai.\n\n1. CAMPUS INFRASTRUCTURE SUMMARY\n- Total Buildings: 7 key blocks (Academic Block A, Academic Block B, Computer Laboratories, Library, Auditorium, Canteen, Administration Block).\n- Departments: Computer Engineering (ACA), Information Technology (ACB), Electronics & Telecommunication (ACA), AI & Data Science (LAB), Administration (ADM).\n- Student Population: 3,000 | Faculty & Staff: 200 | Total Campus Community: 3,200.\n- Total Built-Up Area: 32,500 m2.\n\n2. KEY OPERATIONAL METRICS\n- Grid Electricity: Maharashtra State Grid (CEA factor: 0.82 kg CO2e/kWh).\n- Installed Rooftop Solar: 220 kWp (Phase 1 across ACA, ACB, LIB, ADM) generating ~312,000 kWh/year.\n- Diesel Generator Backup: 18,400 litres consumed in 2024 (IPCC factor: 2.68 kg CO2e/L).\n- Annual Municipal Water Consumption: 48,000,000 litres.\n- Annual Rainwater Harvested: 12,400,000 litres.\n- Annual Solid Waste: 68,400 kg (Recycling rate: 48.2% in 2024).\n- Total Baseline Emissions: 2,450,000 kg CO2e/year (2,450 tonnes CO2e).\n- Declared Net-Zero Target Date: December 31, 2040."
+  }
+]

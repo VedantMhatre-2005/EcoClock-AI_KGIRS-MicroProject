@@ -1,0 +1,8 @@
+id,name,area_m2,primary_use,occupancy,has_rooftop_solar,solar_capacity_kw
+BLD_ACA,Academic Block A,7500,Classrooms & Faculty Offices,1100,True,80
+BLD_ACB,Academic Block B,6800,Classrooms & Seminar Halls,950,True,70
+BLD_LAB,Computer Laboratories,5200,High-Density Computing Labs & Server Rooms,650,False,0
+BLD_LIB,Library,3100,"Reading Rooms, Digital Archives & Stack Areas",350,True,30
+BLD_AUD,Auditorium,2800,"Cultural Events, Keynotes & Large Conferences",800,False,0
+BLD_CAN,Canteen,2100,"Food Preparation, Dining & Organic Waste Digestion",400,False,0
+BLD_ADM,Administration Block,5000,"Administrative Offices, Council Chambers & Data Hub",200,True,40

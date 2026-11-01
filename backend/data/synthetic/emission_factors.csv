@@ -1,0 +1,10 @@
+id,category,name,value,unit,reference_year,region,source,source_type,version
+EF_ELEC_GRID,ELECTRICITY,Grid Electricity (CEA Baseline India v19),0.82,kg CO2e/kWh,2024,"Western Regional Grid, India",Central Electricity Authority (CEA) CO2 Baseline Database,DOCUMENTED,19.0
+EF_DIESEL_GEN,DIESEL,Stationary Diesel Generator,2.68,kg CO2e/litre,2024,India National Average,IPCC Emission Factor Database,DOCUMENTED,2024.1
+EF_TRANS_BUS,TRANSPORT,Municipal Transit / Public Bus,0.054,kg CO2e/passenger-km,2024,Urban India,India GHG Program Transport Guidance,DOCUMENTED,2.2
+EF_TRANS_TRAIN,TRANSPORT,Suburban Electric Rail / Metro,0.028,kg CO2e/passenger-km,2024,Mumbai Suburban Rail,Indian Railways Carbon Accounting,DOCUMENTED,2023.4
+EF_TRANS_CAR,TRANSPORT,Private Petrol / Diesel Passenger Car,0.175,kg CO2e/passenger-km,2024,India Metro,ARAI Carbon Footprint Guidelines,DOCUMENTED,3.1
+EF_TRANS_BIKE,TRANSPORT,Two-Wheeler (Motorcycle / Scooter),0.042,kg CO2e/passenger-km,2024,India Urban,ARAI Two-Wheeler Emission Benchmarks,DOCUMENTED,2.0
+EF_WASTE_LANDFILL,WASTE,Unsegregated Municipal Solid Waste to Landfill,1.25,kg CO2e/kg waste,2024,Deonar / Kanjurmarg Mumbai,CPCB Municipal Solid Waste Technical Report,DOCUMENTED,1.8
+EF_WASTE_COMPOST,WASTE,Decentralized Aerobic Composting,0.08,kg CO2e/kg waste,2024,Campus Compost Unit,IPCC Tier 1 Composting Factor,DOCUMENTED,2024.1
+EF_WASTE_RECYCLE,WASTE,Dry Recyclables Recovery Avoided Factor,-0.65,kg CO2e/kg waste,2024,Formal Recycling Stream,TERI Circular Waste Model,ESTIMATED,1.0

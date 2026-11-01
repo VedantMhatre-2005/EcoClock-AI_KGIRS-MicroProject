@@ -1,0 +1,138 @@
+[
+  {
+    "id": "INIT_SOLAR_PH1",
+    "name": "Phase-1 Rooftop Solar Photovoltaic Grid-Tied Project (220 kWp)",
+    "description": "Installation of 220 kWp monocrystalline rooftop PV modules across Academic Block A, Academic Block B, Library, and Administration Block.",
+    "lead_department": "Campus Facilities & Electronics",
+    "status": "COMPLETED",
+    "start_date": "2023-01-15",
+    "completion_date": "2023-11-30",
+    "sdg_ids": [
+      "SDG_7",
+      "SDG_11",
+      "SDG_13"
+    ],
+    "target_ids": [
+      "TRG_NET_ZERO",
+      "TRG_RENEWABLE"
+    ],
+    "carbon_reduction_estimate_kgco2e": 275000.0,
+    "source_type": "SYNTHETIC"
+  },
+  {
+    "id": "INIT_SOLAR_PH2",
+    "name": "Phase-2 Solar Expansion & Battery Storage Proposal (150 kWp + 100 kWh BESS)",
+    "description": "Feasibility project for adding 150 kWp canopy solar over campus parking and auditorium roof with battery energy storage.",
+    "lead_department": "Green Campus Committee",
+    "status": "PLANNED",
+    "start_date": "2025-06-01",
+    "completion_date": "2026-03-31",
+    "sdg_ids": [
+      "SDG_7",
+      "SDG_9",
+      "SDG_13"
+    ],
+    "target_ids": [
+      "TRG_NET_ZERO",
+      "TRG_RENEWABLE"
+    ],
+    "carbon_reduction_estimate_kgco2e": 185000.0,
+    "source_type": "SYNTHETIC"
+  },
+  {
+    "id": "INIT_RWH_SYSTEM",
+    "name": "Integrated Rainwater Harvesting & Groundwater Recharge Cisterns",
+    "description": "Collection system capturing runoff from 18,000 m2 roof surface with three 150,000-litre filtration cisterns for flushing and garden irrigation.",
+    "lead_department": "Campus Infrastructure & Civil Works",
+    "status": "ACTIVE",
+    "start_date": "2023-07-01",
+    "completion_date": "2024-05-15",
+    "sdg_ids": [
+      "SDG_6",
+      "SDG_11",
+      "SDG_12"
+    ],
+    "target_ids": [
+      "TRG_WATER_NEUTRAL"
+    ],
+    "carbon_reduction_estimate_kgco2e": 12000.0,
+    "source_type": "SYNTHETIC"
+  },
+  {
+    "id": "INIT_BIOGAS_CANTEEN",
+    "name": "Smart Food Waste Digester & Organic Aerobic Composting Pit",
+    "description": "250 kg/day anaerobic biomethanation plant processing food waste from Canteen into cooking gas and organic nutrient-rich fertilizer.",
+    "lead_department": "Canteen Committee & Green Club",
+    "status": "ACTIVE",
+    "start_date": "2023-09-01",
+    "completion_date": "2024-02-10",
+    "sdg_ids": [
+      "SDG_12",
+      "SDG_13",
+      "SDG_15"
+    ],
+    "target_ids": [
+      "TRG_ZERO_WASTE",
+      "TRG_NET_ZERO"
+    ],
+    "carbon_reduction_estimate_kgco2e": 48000.0,
+    "source_type": "SYNTHETIC"
+  },
+  {
+    "id": "INIT_ELECTRIC_SHUTTLE",
+    "name": "Zero-Emission Electric Campus Transit & Station Feeder Van",
+    "description": "Operation of two 14-seater electric shuttle vans connecting Kurla / Chembur suburban train stations to VESIT campus for staff and students.",
+    "lead_department": "Administration & Student Council",
+    "status": "ACTIVE",
+    "start_date": "2024-01-08",
+    "completion_date": "2024-12-31",
+    "sdg_ids": [
+      "SDG_11",
+      "SDG_13"
+    ],
+    "target_ids": [
+      "TRG_GREEN_COMMUTE",
+      "TRG_NET_ZERO"
+    ],
+    "carbon_reduction_estimate_kgco2e": 36000.0,
+    "source_type": "SYNTHETIC"
+  },
+  {
+    "id": "INIT_IOT_ENERGY_MGT",
+    "name": "Campus-Wide IoT Smart Sub-Metering & Energy Audit Protocol",
+    "description": "Deployment of 45 Modbus IoT smart electricity meters across all building distribution panels providing real-time telemetry.",
+    "lead_department": "AI & Data Science & Computer Engineering",
+    "status": "ACTIVE",
+    "start_date": "2024-03-01",
+    "completion_date": "2024-09-30",
+    "sdg_ids": [
+      "SDG_7",
+      "SDG_9",
+      "SDG_12"
+    ],
+    "target_ids": [
+      "TRG_NET_ZERO",
+      "TRG_RENEWABLE"
+    ],
+    "carbon_reduction_estimate_kgco2e": 55000.0,
+    "source_type": "SYNTHETIC"
+  },
+  {
+    "id": "INIT_BIODIVERSITY_ZONE",
+    "name": "Miyawaki Urban Native Afforestation & Campus Biodiversity Arboretum",
+    "description": "High-density plantation of 1,200 indigenous plant and tree species on campus periphery providing carbon sequestration and heat island mitigation.",
+    "lead_department": "Nature Club & Environmental Cell",
+    "status": "ACTIVE",
+    "start_date": "2023-06-05",
+    "completion_date": "2024-06-05",
+    "sdg_ids": [
+      "SDG_13",
+      "SDG_15"
+    ],
+    "target_ids": [
+      "TRG_NET_ZERO"
+    ],
+    "carbon_reduction_estimate_kgco2e": 14000.0,
+    "source_type": "SYNTHETIC"
+  }
+]

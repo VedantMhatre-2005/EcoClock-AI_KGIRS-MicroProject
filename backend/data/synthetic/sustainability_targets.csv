@@ -1,0 +1,6 @@
+id,title,category,baseline_year,target_year,baseline_value,target_value,unit,status,source_type
+TRG_NET_ZERO,Campus Net-Zero Carbon Neutrality by 2040,CARBON,2024,2040,2450000.0,0.0,kg CO2e/year,IN_PROGRESS,SYNTHETIC
+TRG_RENEWABLE,50% Renewable Electricity Generation by 2030,ENERGY,2024,2030,14.8,50.0,percentage,IN_PROGRESS,SYNTHETIC
+TRG_ZERO_WASTE,Zero Waste to Landfill & 85% Recycling by 2028,WASTE,2024,2028,42.0,85.0,percentage,IN_PROGRESS,SYNTHETIC
+TRG_WATER_NEUTRAL,30% Reduction in Municipal Water Consumption by 2029,WATER,2024,2029,48000000.0,33600000.0,litres/year,IN_PROGRESS,SYNTHETIC
+TRG_GREEN_COMMUTE,70% Low-Carbon Campus Commute Share by 2027,TRANSPORT,2024,2027,52.0,70.0,percentage,IN_PROGRESS,SYNTHETIC

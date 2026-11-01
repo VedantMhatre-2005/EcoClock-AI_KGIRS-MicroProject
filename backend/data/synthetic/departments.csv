@@ -1,0 +1,6 @@
+id,name,head,building_id
+DEP_CMPN,Computer Engineering,Dr. N. Joshi,BLD_ACA
+DEP_INFT,Information Technology,Dr. S. Nair,BLD_ACB
+DEP_EXTC,Electronics & Telecommunication,Dr. R. Kulkarni,BLD_ACA
+DEP_AIDS,Artificial Intelligence & Data Science,Dr. P. Sharma,BLD_LAB
+DEP_ADMN,Administration & Campus Facilities,Mr. V. Deshmukh,BLD_ADM

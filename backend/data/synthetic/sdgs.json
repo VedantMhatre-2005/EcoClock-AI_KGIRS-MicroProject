@@ -1,0 +1,121 @@
+[
+  {
+    "id": "SDG_1",
+    "sdg_number": 1,
+    "name": "No Poverty",
+    "description": "End poverty in all its forms everywhere.",
+    "color": "#e5243b"
+  },
+  {
+    "id": "SDG_2",
+    "sdg_number": 2,
+    "name": "Zero Hunger",
+    "description": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
+    "color": "#dda63a"
+  },
+  {
+    "id": "SDG_3",
+    "sdg_number": 3,
+    "name": "Good Health and Well-being",
+    "description": "Ensure healthy lives and promote well-being for all at all ages.",
+    "color": "#4c9f38"
+  },
+  {
+    "id": "SDG_4",
+    "sdg_number": 4,
+    "name": "Quality Education",
+    "description": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+    "color": "#c5192d"
+  },
+  {
+    "id": "SDG_5",
+    "sdg_number": 5,
+    "name": "Gender Equality",
+    "description": "Achieve gender equality and empower all women and girls.",
+    "color": "#ff3a21"
+  },
+  {
+    "id": "SDG_6",
+    "sdg_number": 6,
+    "name": "Clean Water and Sanitation",
+    "description": "Ensure availability and sustainable management of water and sanitation for all.",
+    "color": "#26bde2"
+  },
+  {
+    "id": "SDG_7",
+    "sdg_number": 7,
+    "name": "Affordable and Clean Energy",
+    "description": "Ensure access to affordable, reliable, sustainable and modern energy for all.",
+    "color": "#fcc30b"
+  },
+  {
+    "id": "SDG_8",
+    "sdg_number": 8,
+    "name": "Decent Work and Economic Growth",
+    "description": "Promote sustained, inclusive and sustainable economic growth, full and productive employment.",
+    "color": "#a21942"
+  },
+  {
+    "id": "SDG_9",
+    "sdg_number": 9,
+    "name": "Industry, Innovation and Infrastructure",
+    "description": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.",
+    "color": "#fd6925"
+  },
+  {
+    "id": "SDG_10",
+    "sdg_number": 10,
+    "name": "Reduced Inequalities",
+    "description": "Reduce inequality within and among countries.",
+    "color": "#dd1367"
+  },
+  {
+    "id": "SDG_11",
+    "sdg_number": 11,
+    "name": "Sustainable Cities and Communities",
+    "description": "Make cities and human settlements inclusive, safe, resilient and sustainable.",
+    "color": "#fd9d24"
+  },
+  {
+    "id": "SDG_12",
+    "sdg_number": 12,
+    "name": "Responsible Consumption and Production",
+    "description": "Ensure sustainable consumption and production patterns.",
+    "color": "#bf8b2e"
+  },
+  {
+    "id": "SDG_13",
+    "sdg_number": 13,
+    "name": "Climate Action",
+    "description": "Take urgent action to combat climate change and its impacts.",
+    "color": "#3f7e44"
+  },
+  {
+    "id": "SDG_14",
+    "sdg_number": 14,
+    "name": "Life Below Water",
+    "description": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
+    "color": "#0a97d9"
+  },
+  {
+    "id": "SDG_15",
+    "sdg_number": 15,
+    "name": "Life on Land",
+    "description": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests.",
+    "color": "#56c02b"
+  },
+  {
+    "id": "SDG_16",
+    "sdg_number": 16,
+    "name": "Peace, Justice and Strong Institutions",
+    "description": "Promote peaceful and inclusive societies for sustainable development.",
+    "color": "#00689d"
+  },
+  {
+    "id": "SDG_17",
+    "sdg_number": 17,
+    "name": "Partnerships for the Goals",
+    "description": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
+    "color": "#19486a"
+  }
+]
