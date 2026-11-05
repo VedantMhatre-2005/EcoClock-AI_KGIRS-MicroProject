@@ -47,8 +47,11 @@ class ScenarioComparator:
                 "scenario_type": r.scenario_type,
                 "parameters": json.loads(r.parameters_json),
                 "baseline_emissions_kgco2e": r.baseline_emissions_kgco2e,
+                "baseline_emissions_tonnes_co2e": round(r.baseline_emissions_kgco2e / 1000.0, 2),
                 "projected_emissions_kgco2e": r.projected_emissions_kgco2e,
+                "projected_emissions_tonnes_co2e": round(r.projected_emissions_kgco2e / 1000.0, 2),
                 "reduction_kgco2e": r.reduction_kgco2e,
+                "reduction_tonnes_co2e": round(r.reduction_kgco2e / 1000.0, 2),
                 "percentage_reduction": r.percentage_reduction,
                 "resource_savings": json.loads(r.resource_savings_json),
                 "created_at": r.created_at.isoformat() if r.created_at else None

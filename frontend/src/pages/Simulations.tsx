@@ -24,6 +24,7 @@ export const Simulations: React.FC = () => {
   const [scenarioName, setScenarioName] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
   const [saveSuccess, setSaveSuccess] = useState<string | null>(null);
+  const [justCalculated, setJustCalculated] = useState<boolean>(false);
 
   // Load saved scenarios on mount
   const loadSaved = async () => {
@@ -46,6 +47,8 @@ export const Simulations: React.FC = () => {
     try {
       const res = await apiService.runSimulation(scenarioType, params);
       setResult(res);
+      setJustCalculated(true);
+      setTimeout(() => setJustCalculated(false), 2000);
     } catch (err: any) {
       setError(err.response?.data?.detail || err.message || 'Simulation execution failed');
     } finally {
@@ -250,13 +253,22 @@ export const Simulations: React.FC = () => {
           <button
             onClick={handleRunSimulation}
             disabled={loading}
-            className="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-colors"
+            className={`w-full py-2.5 font-semibold rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-all ${
+              justCalculated
+                ? 'bg-emerald-800 text-white'
+                : 'bg-emerald-600 hover:bg-emerald-700 text-white'
+            }`}
           >
             {loading ? (
               <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            ) : justCalculated ? (
+              <>
+                <ShieldCheck className="w-4 h-4 text-emerald-300" />
+                <span>Impact Recalculated!</span>
+              </>
             ) : (
               <>
-                <Play className="w-3.5 h-3.5" />
+                <Play className="w-3.5 h-3.5 fill-current" />
                 <span>Re-calculate Impact</span>
               </>
             )}

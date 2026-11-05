@@ -6,14 +6,23 @@ import {
 import { apiService } from '../services/api';
 
 const LABEL_COLORS: Record<string, { bg: string; border: string; text: string; fill: string }> = {
+  Institution: { bg: '#e0e7ff', border: '#4f46e5', text: '#3730a3', fill: '#4f46e5' },
   Building: { bg: '#dbeafe', border: '#2563eb', text: '#1e40af', fill: '#3b82f6' },
   Initiative: { bg: '#d1fae5', border: '#059669', text: '#065f46', fill: '#10b981' },
+  SustainabilityInitiative: { bg: '#d1fae5', border: '#059669', text: '#065f46', fill: '#10b981' },
   Target: { bg: '#fee2e2', border: '#dc2626', text: '#991b1b', fill: '#ef4444' },
-  Metric: { bg: '#fef3c7', border: '#d97706', text: '#92400e', fill: '#f59e0b' },
+  SustainabilityTarget: { bg: '#fee2e2', border: '#dc2626', text: '#991b1b', fill: '#ef4444' },
   SDG: { bg: '#f3e8ff', border: '#7c3aed', text: '#5b21b6', fill: '#8b5cf6' },
-  Document: { bg: '#e0e7ff', border: '#4338ca', text: '#3730a3', fill: '#6366f1' },
-  Policy: { bg: '#ccfbf1', border: '#0d9488', text: '#115e59', fill: '#14b8a6' },
+  Department: { bg: '#ccfbf1', border: '#0d9488', text: '#115e59', fill: '#0d9488' },
+  Document: { bg: '#ede9fe', border: '#6366f1', text: '#4338ca', fill: '#6366f1' },
+  Measurement: { bg: '#fef3c7', border: '#d97706', text: '#92400e', fill: '#f59e0b' },
+  Metric: { bg: '#fef3c7', border: '#d97706', text: '#92400e', fill: '#f59e0b' },
+  EnergySource: { bg: '#fef9c3', border: '#ca8a04', text: '#854d0e', fill: '#eab308' },
+  Resource: { bg: '#cffafe', border: '#0891b2', text: '#155e75', fill: '#06b6d4' },
+  Emission: { bg: '#ffedd5', border: '#ea580c', text: '#9a3412', fill: '#f97316' },
   EmissionSource: { bg: '#ffedd5', border: '#ea580c', text: '#9a3412', fill: '#f97316' },
+  EmissionFactor: { bg: '#ffe4e6', border: '#e11d48', text: '#9f1239', fill: '#f43f5e' },
+  Policy: { bg: '#ccfbf1', border: '#0d9488', text: '#115e59', fill: '#14b8a6' },
   Default: { bg: '#f3f4f6', border: '#6b7280', text: '#374151', fill: '#9ca3af' }
 };
 
@@ -308,7 +317,7 @@ export const GraphExplorer: React.FC = () => {
                         e.stopPropagation();
                         setSelectedNode(node);
                       }}
-                      className="cursor-pointer transition-transform hover:scale-110"
+                      className="cursor-pointer group"
                     >
                       <circle
                         r={isSelected ? 18 : 12}
@@ -316,6 +325,7 @@ export const GraphExplorer: React.FC = () => {
                         stroke={isSelected ? '#111827' : colorScheme.border}
                         strokeWidth={isSelected ? 3 : 1.5}
                         fillOpacity={0.9}
+                        className="transition-all duration-150 group-hover:stroke-emerald-600 group-hover:stroke-[3px] group-hover:fill-opacity-100"
                       />
                       <text
                         y={isSelected ? 28 : 22}

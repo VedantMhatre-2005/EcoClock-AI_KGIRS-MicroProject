@@ -3,10 +3,27 @@ import logging
 import time
 import httpx
 from typing import Dict, Any, List, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from app.config import settings
 
 logger = logging.getLogger(__name__)
+
+def _coerce_to_str(val: Any, default: str = "") -> str:
+    """Safely extracts a string from a string, dict, or list representation."""
+    if isinstance(val, str):
+        return val.strip()
+    if isinstance(val, dict):
+        for k in ["name", "id", "entity", "title", "label", "text", "value"]:
+            if k in val and isinstance(val[k], (str, int, float)):
+                return str(val[k]).strip()
+        # Fallback to first scalar value
+        for v in val.values():
+            if isinstance(v, (str, int, float)):
+                return str(v).strip()
+        return str(val)
+    if isinstance(val, list) and val:
+        return _coerce_to_str(val[0], default)
+    return str(val or default).strip()
 
 class ExtractedEntity(BaseModel):
     name: str = Field(..., description="Mentioned name of the entity in the text")
@@ -14,13 +31,41 @@ class ExtractedEntity(BaseModel):
     properties: Dict[str, Any] = Field(default_factory=dict)
     confidence: float = Field(1.0, ge=0.0, le=1.0)
 
+    @field_validator("name", mode="before")
+    @classmethod
+    def parse_entity_name(cls, v: Any) -> str:
+        return _coerce_to_str(v, default="UnknownEntity")
+
+    @field_validator("entity_type", mode="before")
+    @classmethod
+    def parse_entity_type(cls, v: Any) -> str:
+        return _coerce_to_str(v, default="Entity")
+
 class ExtractedRelationship(BaseModel):
     source_entity: str
     target_entity: str
     relationship_type: str
-    evidence_excerpt: str
+    evidence_excerpt: str = Field(default="")
     confidence: float = Field(1.0, ge=0.0, le=1.0)
     is_inferred: bool = Field(False)
+
+    @field_validator("source_entity", "target_entity", mode="before")
+    @classmethod
+    def parse_rel_entity(cls, v: Any) -> str:
+        return _coerce_to_str(v, default="UnknownEntity")
+
+    @field_validator("relationship_type", mode="before")
+    @classmethod
+    def parse_rel_type(cls, v: Any) -> str:
+        s = _coerce_to_str(v, default="ASSOCIATED_WITH")
+        return s.upper().replace(" ", "_")
+
+    @field_validator("evidence_excerpt", mode="before")
+    @classmethod
+    def parse_evidence(cls, v: Any) -> str:
+        if isinstance(v, (dict, list)):
+            return str(v)[:300]
+        return str(v or "")[:300]
 
 class ExtractionResult(BaseModel):
     entities: List[ExtractedEntity] = Field(default_factory=list)
@@ -110,20 +155,52 @@ Relationship Types: HAS_BUILDING, HAS_DEPARTMENT, CONSUMES_RESOURCE, USES_ENERGY
 Output ONLY valid JSON matching this schema:
 {
   "entities": [
-    {"name": "...", "entity_type": "...", "properties": {}, "confidence": 1.0}
+    {"name": "VESIT Green Campus", "entity_type": "Institution", "properties": {}, "confidence": 1.0}
   ],
   "relationships": [
-    {"source_entity": "...", "target_entity": "...", "relationship_type": "...", "evidence_excerpt": "...", "confidence": 1.0, "is_inferred": false}
+    {"source_entity": "VESIT Green Campus", "target_entity": "Academic Block A", "relationship_type": "HAS_BUILDING", "evidence_excerpt": "...", "confidence": 1.0, "is_inferred": false}
   ]
 }
-Temperature must be 0."""
+
+CRITICAL RULES:
+1. "source_entity" and "target_entity" MUST BE PLAIN STRINGS (e.g. "VESIT Green Campus"), NEVER nested JSON objects or dictionaries.
+2. "name" and "entity_type" MUST BE PLAIN STRINGS.
+3. Temperature must be 0."""
         user_prompt = f"Document: {document_title}\nText:\n{chunk_text}\n\nExtract entities and relationships as JSON:"
-        raw_response = self.generate(user_prompt, system=system_prompt, temperature=0.0, format_json=True)
         try:
+            raw_response = self.generate(user_prompt, system=system_prompt, temperature=0.0, format_json=True)
             data = json.loads(raw_response)
-            return ExtractionResult(**data)
+
+            # Pre-clean data to ensure compatibility with ExtractionResult
+            if isinstance(data, dict):
+                entities_raw = data.get("entities", [])
+                clean_entities = []
+                for ent in entities_raw:
+                    if isinstance(ent, dict):
+                        clean_entities.append({
+                            "name": _coerce_to_str(ent.get("name")),
+                            "entity_type": _coerce_to_str(ent.get("entity_type", "Entity")),
+                            "properties": ent.get("properties", {}) if isinstance(ent.get("properties"), dict) else {},
+                            "confidence": float(ent.get("confidence", 1.0)) if isinstance(ent.get("confidence"), (int, float)) else 1.0
+                        })
+
+                rels_raw = data.get("relationships", [])
+                clean_rels = []
+                for rel in rels_raw:
+                    if isinstance(rel, dict):
+                        clean_rels.append({
+                            "source_entity": _coerce_to_str(rel.get("source_entity")),
+                            "target_entity": _coerce_to_str(rel.get("target_entity")),
+                            "relationship_type": _coerce_to_str(rel.get("relationship_type", "ASSOCIATED_WITH")),
+                            "evidence_excerpt": _coerce_to_str(rel.get("evidence_excerpt", chunk_text[:200])),
+                            "confidence": float(rel.get("confidence", 1.0)) if isinstance(rel.get("confidence"), (int, float)) else 1.0,
+                            "is_inferred": bool(rel.get("is_inferred", False))
+                        })
+
+                return ExtractionResult(entities=clean_entities, relationships=clean_rels)
+            return ExtractionResult(entities=[], relationships=[])
         except Exception as e:
-            logger.error(f"Failed to parse LLM extraction JSON: {e}")
+            logger.warning(f"Failed to parse LLM extraction JSON: {e}")
             return ExtractionResult(entities=[], relationships=[])
 
     def generate_cypher(self, user_question: str, schema_description: str) -> str:

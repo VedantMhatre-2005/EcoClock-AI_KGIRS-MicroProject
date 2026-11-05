@@ -23,8 +23,15 @@ class ScenarioEngine:
         resource_savings = {}
         details = {}
 
-        if scenario_type == "SOLAR":
-            cap_kw = float(parameters.get("additional_capacity_kw", 200.0))
+        st = scenario_type.upper().strip()
+
+        if "SOLAR" in st and "COMBINED" not in st:
+            cap_kw = float(
+                parameters.get("solar_kw") or
+                parameters.get("additional_capacity_kw") or
+                parameters.get("solar_capacity_kw") or
+                200.0
+            )
             res = solar_simulator.simulate(additional_capacity_kw=cap_kw)
             reduction_kgco2e = res["avoided_emissions_kgco2e"]
             resource_savings = {
@@ -33,9 +40,15 @@ class ScenarioEngine:
             }
             details = res
 
-        elif scenario_type == "TRANSPORT":
-            pct_pub = float(parameters.get("pct_shift_to_public_transit", 25.0))
-            pct_act = float(parameters.get("pct_shift_to_cycling_walking", 15.0))
+        elif "TRANSPORT" in st and "COMBINED" not in st:
+            shift_pct = float(
+                parameters.get("transport_shift_pct") or
+                parameters.get("pct_shift_to_public_transit") or
+                parameters.get("transport_public_shift_pct") or
+                30.0
+            )
+            pct_pub = float(parameters.get("pct_shift_to_public_transit") or (shift_pct * 0.7))
+            pct_act = float(parameters.get("pct_shift_to_cycling_walking") or (shift_pct * 0.3))
             res = transport_simulator.simulate(
                 pct_shift_to_public_transit=pct_pub,
                 pct_shift_to_cycling_walking=pct_act
@@ -47,10 +60,15 @@ class ScenarioEngine:
             }
             details = res
 
-        elif scenario_type == "WASTE":
-            w_red = float(parameters.get("waste_reduction_pct", 20.0))
-            rec_pct = float(parameters.get("target_recycling_pct", 65.0))
-            comp_pct = float(parameters.get("target_composting_pct", 25.0))
+        elif "WASTE" in st and "COMBINED" not in st:
+            rec_pct = float(
+                parameters.get("recycling_rate_pct") or
+                parameters.get("target_recycling_pct") or
+                parameters.get("waste_recycling_pct") or
+                60.0
+            )
+            w_red = float(parameters.get("waste_reduction_pct", 15.0))
+            comp_pct = float(parameters.get("target_composting_pct") or min(25.0, max(5.0, 100.0 - rec_pct)))
             res = waste_simulator.simulate(
                 waste_reduction_pct=w_red,
                 target_recycling_pct=rec_pct,
@@ -63,9 +81,17 @@ class ScenarioEngine:
             }
             details = res
 
-        elif scenario_type == "WATER":
-            aerator_pct = float(parameters.get("fixture_efficiency_reduction_pct", 15.0))
-            cistern_m3 = float(parameters.get("rainwater_cistern_expansion_m3", 300.0))
+        elif "WATER" in st and "COMBINED" not in st:
+            cistern_litres = float(
+                parameters.get("rainwater_additional_litres") or
+                (float(parameters.get("rainwater_cistern_expansion_m3", 250.0)) * 1000.0)
+            )
+            cistern_m3 = cistern_litres / 1000.0
+            aerator_pct = float(
+                parameters.get("fixture_efficiency_reduction_pct") or
+                parameters.get("water_fixture_efficiency_pct") or
+                15.0
+            )
             greywater_lpd = float(parameters.get("greywater_reuse_litres_per_day", 18000.0))
             res = water_simulator.simulate(
                 fixture_efficiency_reduction_pct=aerator_pct,
@@ -79,21 +105,55 @@ class ScenarioEngine:
             }
             details = res
 
-        elif scenario_type == "COMBINED":
-            # Combine all four interventions
-            solar_res = solar_simulator.simulate(
-                additional_capacity_kw=float(parameters.get("solar_capacity_kw", 200.0))
+        elif "COMBINED" in st:
+            # Combine all four interventions with slider parameters
+            cap_kw = float(
+                parameters.get("solar_kw") or
+                parameters.get("additional_capacity_kw") or
+                parameters.get("solar_capacity_kw") or
+                200.0
             )
+            solar_res = solar_simulator.simulate(additional_capacity_kw=cap_kw)
+
+            shift_pct = float(
+                parameters.get("transport_shift_pct") or
+                parameters.get("pct_shift_to_public_transit") or
+                30.0
+            )
+            pct_pub = float(parameters.get("transport_public_shift_pct") or parameters.get("pct_shift_to_public_transit") or (shift_pct * 0.7))
+            pct_act = float(parameters.get("transport_active_shift_pct") or parameters.get("pct_shift_to_cycling_walking") or (shift_pct * 0.3))
             trans_res = transport_simulator.simulate(
-                pct_shift_to_public_transit=float(parameters.get("transport_public_shift_pct", 20.0)),
-                pct_shift_to_cycling_walking=float(parameters.get("transport_active_shift_pct", 10.0))
+                pct_shift_to_public_transit=pct_pub,
+                pct_shift_to_cycling_walking=pct_act
             )
+
+            rec_pct = float(
+                parameters.get("recycling_rate_pct") or
+                parameters.get("waste_recycling_pct") or
+                parameters.get("target_recycling_pct") or
+                60.0
+            )
+            w_red = float(parameters.get("waste_reduction_pct", 15.0))
+            comp_pct = float(parameters.get("target_composting_pct") or min(25.0, max(5.0, 100.0 - rec_pct)))
             waste_res = waste_simulator.simulate(
-                waste_reduction_pct=float(parameters.get("waste_reduction_pct", 15.0)),
-                target_recycling_pct=float(parameters.get("waste_recycling_pct", 60.0))
+                waste_reduction_pct=w_red,
+                target_recycling_pct=rec_pct,
+                target_composting_pct=comp_pct
+            )
+
+            cistern_litres = float(
+                parameters.get("rainwater_additional_litres") or
+                (float(parameters.get("rainwater_cistern_expansion_m3", 200.0)) * 1000.0)
+            )
+            cistern_m3 = cistern_litres / 1000.0
+            aerator_pct = float(
+                parameters.get("water_fixture_efficiency_pct") or
+                parameters.get("fixture_efficiency_reduction_pct") or
+                12.0
             )
             water_res = water_simulator.simulate(
-                fixture_efficiency_reduction_pct=float(parameters.get("water_fixture_efficiency_pct", 15.0))
+                fixture_efficiency_reduction_pct=aerator_pct,
+                rainwater_cistern_expansion_m3=cistern_m3
             )
 
             reduction_kgco2e = (

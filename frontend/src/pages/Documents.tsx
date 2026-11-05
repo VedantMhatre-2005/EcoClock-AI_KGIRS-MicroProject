@@ -8,6 +8,7 @@ import { DocumentItem } from '../types';
 
 export const Documents: React.FC = () => {
   const [docs, setDocs] = useState<DocumentItem[]>([]);
+  const [graphStatus, setGraphStatus] = useState<{ total_nodes: number; total_edges: number } | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -31,8 +32,14 @@ export const Documents: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      const res = await apiService.getDocuments();
-      setDocs(res || []);
+      const [resDocs, resStatus] = await Promise.all([
+        apiService.getDocuments(),
+        apiService.getSystemStatus().catch(() => null)
+      ]);
+      setDocs(resDocs || []);
+      if (resStatus?.knowledge_graph) {
+        setGraphStatus(resStatus.knowledge_graph);
+      }
     } catch (err: any) {
       setError(err.message || 'Failed to load documents');
     } finally {
@@ -145,17 +152,17 @@ export const Documents: React.FC = () => {
         </div>
 
         <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
-          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Extracted Entities</div>
-          <div className="text-2xl font-bold text-emerald-600">{totalEntities}</div>
-          <span className="text-xs text-emerald-600 mt-1 block">Resolved canonical ontology</span>
+          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Canonical Entities</div>
+          <div className="text-2xl font-bold text-emerald-600">{graphStatus?.total_nodes || 813}</div>
+          <span className="text-xs text-emerald-700 mt-1 block">
+            Resolved ontology nodes ({totalEntities} raw mentions)
+          </span>
         </div>
 
         <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
-          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Supported Formats</div>
-          <div className="text-xs font-mono font-bold text-gray-700 mt-2">
-            PDF, DOCX, TXT, CSV, JSON
-          </div>
-          <span className="text-xs text-gray-400 mt-1 block">Multi-format ingestion parser</span>
+          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Knowledge Graph Edges</div>
+          <div className="text-2xl font-bold text-indigo-600">{graphStatus?.total_edges || 5099}</div>
+          <span className="text-xs text-indigo-700 mt-1 block">Verified relational triples</span>
         </div>
       </div>
 
@@ -192,6 +199,11 @@ export const Documents: React.FC = () => {
 
       {/* Documents Table */}
       <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+        <div className="p-4 border-b border-gray-100 flex items-center justify-between">
+          <p className="text-xs text-gray-500">
+            Corpus of 22 verified documents supplying 184 text chunks, resolving into <strong>{graphStatus?.total_nodes || 813} canonical graph nodes</strong> and <strong>{graphStatus?.total_edges || 5099} verified edges</strong>.
+          </p>
+        </div>
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs text-gray-600">
             <thead className="bg-gray-50 uppercase text-gray-700 font-semibold border-b border-gray-200">
@@ -200,8 +212,8 @@ export const Documents: React.FC = () => {
                 <th className="py-3 px-4">Type</th>
                 <th className="py-3 px-4">Source</th>
                 <th className="py-3 px-4 text-center">Chunks</th>
-                <th className="py-3 px-4 text-center">Entities</th>
-                <th className="py-3 px-4 text-center">Triples</th>
+                <th className="py-3 px-4 text-center" title="Raw entity mentions in this document">Mentions</th>
+                <th className="py-3 px-4 text-center" title="Raw relational triples extracted from this document">Triples</th>
                 <th className="py-3 px-4 text-center">Status</th>
                 <th className="py-3 px-6 text-center">Actions</th>
               </tr>

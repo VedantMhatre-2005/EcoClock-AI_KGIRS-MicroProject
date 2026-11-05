@@ -182,10 +182,10 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Generate synthetic dataset (seed 42)
+# Generate synthetic dataset and 22 two-page PDF documents (first run only; auto-skips subsequent runs)
 python scripts/generate_synthetic_data.py
 
-# Ingest all 22 documents into Knowledge Graph
+# Ingest all 22 PDF documents into the Knowledge Graph
 python scripts/ingest_documents.py
 
 # Run unit & integration test suite
@@ -212,12 +212,14 @@ npm run dev -- --port 5173
 
 ---
 
-## 6. Synthetic Demonstration Dataset
+## 6. Synthetic Demonstration Dataset & PDF Knowledge Base
 
 To allow immediate out-of-the-box exploration without compromising confidential institutional utility accounts, EcoClock AI includes a synthetic dataset generated with fixed random seed **42**:
-- **Campus Entities**: 7 buildings (Academic Blocks A & B, Computer Labs, Library, Auditorium, Canteen, Administration Block) housing 3,000 students and 200 faculty/staff.
-- **Time-Series Telemetry**: 24 months (January 2023 – December 2024) of monthly electricity consumption, rooftop solar production, municipal water usage, rainwater harvesting yields, waste segregation volumes, and commuter modal splits.
-- **22 Grounded Documents**: Fully indexed documents spanning energy audits, rooftop solar installation reports, water balance assessments, e-waste compliance policies, and transit surveys.
+- **Campus Entities**: 7 buildings (Academic Blocks A & B, Computer Labs, Library, Auditorium, Canteen, Administration Block) housing 3,000 students and 200 faculty/staff across 5 academic departments.
+- **Time-Series Telemetry**: 24 months (January 2024 – December 2025) of monthly electricity consumption, rooftop solar production, municipal water usage, rainwater harvesting yields, waste segregation volumes, and commuter modal splits.
+- **22 Grounded Two-Page Documents**: Comprehensive 2-page PDF sustainability documents stored in `backend/data/sample_documents/`, detailing energy audits, solar performance assessments, hydrological yields, circular waste policies, commuter surveys, and net-zero roadmaps.
+- **Persistent PDF Storage & Idempotent Generation**: Generating the dataset creates all 22 PDF documents in `backend/data/sample_documents/` once. Future runs automatically detect existing files and skip regeneration unless `--force` is specified.
+- **GraphRAG Engine**: Microsoft `graphrag` and custom hybrid GraphRAG pipeline in `backend/app/rag/` combining Neo4j property graphs, SentenceTransformers dense embeddings, and Ollama LLM grounding.
 
 > [!IMPORTANT]
 > All synthetic and estimated figures are explicitly marked with `SYNTHETIC DEMO` badges across the frontend UI and database metadata. They represent demonstration assumptions, not claims about actual institutional measurements.

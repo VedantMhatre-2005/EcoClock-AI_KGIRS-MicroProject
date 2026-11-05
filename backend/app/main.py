@@ -45,44 +45,10 @@ async def lifespan(app: FastAPI):
         logger.info("Neo4j offline. Operating in resilient standalone graph mirror mode.")
 
     # Rebuild in-memory graph index from SQLite persistence
+    from app.graph.graph_loader import load_knowledge_graph
     db = SessionLocal()
     try:
-        # Load SDGs
-        for s in db.query(SDGModel).all():
-            graph_builder.add_node(s.id, "SDG", {"name": s.name, "sdg_number": s.sdg_number, "color": s.color})
-
-        # Load Targets
-        for t in db.query(SustainabilityTargetModel).all():
-            graph_builder.add_node(t.id, "SustainabilityTarget", {"name": t.title, "target_year": t.target_year})
-
-        # Load Initiatives
-        for init in db.query(SustainabilityInitiativeModel).all():
-            graph_builder.add_node(init.id, "SustainabilityInitiative", {"name": init.name, "status": init.status})
-
-        # Load Documents
-        for doc in db.query(DocumentModel).all():
-            graph_builder.add_node(doc.id, "Document", {"name": doc.title, "title": doc.title, "type": doc.document_type})
-
-        # Load Extracted Entities & Relationships
-        for ent in db.query(ExtractedEntityModel).all():
-            graph_builder.add_node(ent.canonical_name, ent.entity_type, {"name": ent.name})
-
-        for rel in db.query(ExtractedRelationshipModel).all():
-            graph_builder.add_relationship(
-                relationship_id=rel.id,
-                source_id=rel.source_entity,
-                target_id=rel.target_entity,
-                rel_type=rel.relationship_type,
-                provenance={
-                    "source_document_id": rel.document_id,
-                    "chunk_id": rel.chunk_id,
-                    "evidence_excerpt": rel.evidence_excerpt,
-                    "extraction_method": rel.extraction_method,
-                    "confidence": rel.confidence,
-                    "verification_status": rel.verification_status
-                }
-            )
-        logger.info(f"Graph initialized: {len(graph_builder.nodes)} nodes, {len(graph_builder.edges)} edges.")
+        load_knowledge_graph(db)
     finally:
         db.close()
 

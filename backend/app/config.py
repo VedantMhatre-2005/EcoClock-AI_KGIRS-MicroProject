@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL: str = "mistral"
     OLLAMA_TIMEOUT: int = 60
+    LLM_EXTRACTION_ENABLED: bool = False  # Set to True only if manual slow LLM re-extraction is desired
 
     # Embeddings
     EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
